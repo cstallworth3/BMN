@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betray Me Not – Linda Stallworth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAF8F5;
+      --primary: #3E2F1C;
+      --accent: #D9B574;
+      --light: #E6D2A5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      background: rgba(250, 248, 245, 0.95);
+      backdrop-filter: blur(5px);
+      border-bottom: 1px solid #e0d8cc;
+      z-index: 10;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 8rem 1rem 6rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      font-family: 'Playfair" Display', serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .section-title::before,
+    .section-title::after {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    /* Books */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .book-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .book-card:hover {
+      transform: translateY(-5px);
+    }
+    .book-card h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.25rem;
+    }
+    .book-card .subtitle {
+      font-size: 0.9rem;
+      color: #6e5b43;
+      margin-bottom: 0.75rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #2c1f13;
+    }
+
+    /* Author */
+    .author-section {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 10px;
+      flex-wrap: wrap;
+    }
+    .author-section img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+    }
+    .author-section h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: var(--primary);
+      color: var(--accent);
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .author-section { text-align: center; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="#books">Books</a>
+  <a href="#author">Author</a>
+  <a href="#buy">Buy</a>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <h1>Betray Me Not</h1>
+  <p>A raw, gripping series about love, betrayal, and redemption.</p>
+</header>
+
+<!-- Books Section -->
+<section id="books" class="container">
+  <h2 class="section-title">The Betray Me Series</h2>
+  <div class="books-grid">
+    <div class="book-card">
+      <h3>Betray Me Not</h3>
+      <p class="subtitle">Book 1</p>
+      <p>A mother discovers her husband’s affair.</p>
+      <a href="https://www.amazon.com/Betray-Me-Not-Part-I/dp/B0F33NWH5Z/ref=sr_1_1?crid=1YTWW7WWEDVO7&dib=eyJ2IjoiMSJ9.I8fX8uQSNkdXx8cWP1uCvaiYVApiurvAm7hgn0LK9ABeSRBGX_ZIJ1J6wWPJmLmDira6xY-5UTUgAVGF7lb0LUfIS5PaCP-j4FFnrl-jx1g.75RjSQ4kxI4iecovQtqZ9JoiQShOQs6D7dsHnLBLcrU&dib_tag=se&keywords=linda+stallworth&qid=1753458742&sprefix=linda+sta%2Caps%2C283&sr=8-1" target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+    <div class="book-card">
+      <h3>Betray Me Not, Part II "A Mother's Revenge"</h3>
+      <p class="subtitle">Book 2</p>
+      <p>Deeper betrayals unfold as she navigates single parenthood.</p>
+      <a href="https://www.amazon.com/Betray-Me-Not-Part-II/dp/B0F32CFJYW/ref=sr_1_2?crid=1YTWW7WWEDVO7&dib=eyJ2IjoiMSJ9.I8fX8uQSNkdXx8cWP1uCvaiYVApiurvAm7hgn0LK9ABeSRBGX_ZIJ1J6wWPJmLmDira6xY-5UTUgAVGF7lb0LUfIS5PaCP-j4FFnrl-jx1g.75RjSQ4kxI4iecovQtqZ9JoiQShOQs6D7dsHnLBLcrU&dib_tag=se&keywords=linda+stallworth&qid=1753458742&sprefix=linda+sta%2Caps%2C283&sr=8-2" target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+    <div class="book-card">
+      <h3>Betray Me Not III: "Life After the Verdict"</h3>
+      <p class="subtitle">Book 3</p>
+      <p>The gripping finale — redemption and truth collide.</p>
+      <a href="https://www.amazon.com/Betray-Me-Not-III-Verdict-ebook/dp/B0DP84FJ8D/ref=sr_1_4?crid=1YTWW7WWEDVO7&dib=eyJ2IjoiMSJ9.I8fX8uQSNkdXx8cWP1uCvaiYVApiurvAm7hgn0LK9ABeSRBGX_ZIJ1J6wWPJmLmDira6xY-5UTUgAVGF7lb0LUfIS5PaCP-j4FFnrl-jx1g.75RjSQ4kxI4iecovQtqZ9JoiQShOQs6D7dsHnLBLcrU&dib_tag=se&keywords=linda+stallworth&qid=1753458742&sprefix=linda+sta%2Caps%2C283&sr=8-4" target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+  </div>
+</section>
+
+<!-- Author Bio -->
+<section id="author" class="container author-section">
+  <img src="https://pbs.twimg.com/profile_images/3114536845/38f34f1a778ee6cbb96a7f9200162b0e_400x400.jpeg" alt="Linda Stallworth">
+  <div class="author-text">
+    <h2>About Linda Stallworth</h2>
+    <p>Born in 1964 and raised in Houston Texas, Linda Stallworth writes with raw honesty about personal betrayals. She channels real heartbreak into stories that resonate with anyone who has faced betrayal and fought for healing.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Linda Stallworth. All Rights Reserved.
+</footer>
+
+</body>
+</html>
